@@ -78,11 +78,11 @@
         <!--aici e durerea-->
           <div data-modal-target="#modal" class="notifications-icon-containter">
             <div class="modal active" id="modal"></div>
-            <img class="notifications-icon" src="header/notifications.svg">
+            <img class="notifications-icon" src="header/notifications.svg" onclick="openPopup()" onclick="closePopup()">
             <div class="notifications-count">3</div>
             <div class="tooltip">Notifications</div>
 
-          <div class="notification-bar">
+          <div class="notification-bar" id="popup">
 
             <div class="notification">
               <img class="notification-profile-pic" src="channel-pictures/lambofgod-profile.jpg">
@@ -176,6 +176,41 @@
 
 
           <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=AF6vGYIyV8M" target="_blank">
+            <img class="thumbnail" src="thumbnails/popup.jpg">
+          </a>
+          <div class="video-time">15:39</div>
+        </div>
+    
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@EasyTutorialsVideo" target="_blank">
+              <img class="profile-picture" src="channel-pictures/easyTutorials.jpg">
+            </a>
+            <div class="tooltip-video">
+              <img class="tooltip-video-profile-pic" src="channel-pictures/easyTutorials.jpg">
+              <div class="tooltip-video-right-side">
+                <div class="tooltip-video-name">Easy Tutorials</div>
+                <div class="tooltip-video-subscribers">791K Subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" >
+            <a href="https://www.youtube.com/watch?v=AF6vGYIyV8M" target="_blank">
+              <p class="video-title">How To Make A Popup Using HTML, CSS And JavaScript</p>
+            </a>
+            <a href="https://www.youtube.com/@EasyTutorialsVideo" target="_blank">
+              <p class="video-author">Easy Tutorials</p>
+            </a>
+            <p class="video-stats">253K views &middot; 3 years ago</p>
+          </div>
+          </div>  
+        </div>
+
+
+
+          <div class="video-preview">
             <div class="thumbnail-row">
               <a href="https://www.youtube.com/watch?v=shMezSrVfig" target="_blank">
               <img class="thumbnail" src="thumbnails/jlpt.jpg">
@@ -245,32 +280,43 @@
             </div>
           </div>
           
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <a href="https://www.youtube.com/watch?v=mWnINYbWqH4" target="_blank">
-          <img class="thumbnail" src="thumbnails/lambofgod.jpg">
-        </a>
-        <div class="video-time">3:37</div>
-      </div>
-  
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <a href="https://www.youtube.com/channel/UC4_yA-FDGB3Zwmk96E7yujA" target="_blank">
-            <img class="profile-picture" src="channel-pictures/lambofgod-profile.jpg">
-          </a>
-        </div>
-        <div class="video-info">
-          <a href="https://www.youtube.com/watch?v=mWnINYbWqH4" target="_blank">
-            <p class="video-title">Ditch</p>
-          </a>
-          <a href="https://www.youtube.com/channel/UC4_yA-FDGB3Zwmk96E7yujA" target="_blank">
-            <p class="video-author">Lamb of God</p>
-          </a>
-          <p class="video-stats">1.2Mviews &middot; 4 months ago</p>
-        </div>
-        </div>  
-      </div>
-  
+    
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <a href="https://www.youtube.com/watch?v=F3WIHtOmkBg" target="_blank">
+                <img class="thumbnail" src="thumbnails/metallica.jpg">
+              </a>
+              <div class="video-time">4:34</div>
+            </div>
+        
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/channel/UCbulh9WdLtEXiooRcYK7SWw" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/metallica.jpg">
+                </a>
+                <div class="tooltip-video">
+                  <img class="tooltip-video-profile-pic" src="channel-pictures/metallica.jpg">
+                  <div class="tooltip-video-right-side">
+                    <div class="tooltip-video-name">Metallica</div>
+                    <div class="tooltip-video-subscribers">9.44M Subscribers</div>
+                  </div>
+                </div>
+              </div>
+              <div class="video-info" >
+                <a href="https://www.youtube.com/watch?v=F3WIHtOmkBg" target="_blank">
+                  <p class="video-title">Metallica - Until it sleeps</p>
+                </a>
+                <a href="https://www.youtube.com/channel/UCbulh9WdLtEXiooRcYK7SWw" target="_blank">
+                  <p class="video-author">Metallica</p>
+                </a>
+                <p class="video-stats">43M views &middot; 8 years ago</p>
+              </div>
+              </div>  
+            </div>
+
+
+
+
       <div class="video-preview">
         <div class="thumbnail-row">
           <a href="https://www.youtube.com/watch?v=wmkXQeqEbL8" target="_blank">
@@ -308,81 +354,87 @@
 
         <div class="video-preview">
           <div class="thumbnail-row">
-            <a href="https://www.youtube.com/watch?v=YuG4-lewUTs" target="_blank">
-              <img class="thumbnail" src="thumbnails/parkwaydrive.jpg">
+            <a href="https://www.youtube.com/watch?v=Zxjz6VhUOr8" target="_blank">
+              <img class="thumbnail" src="thumbnails/blackSabbath.jpg">
             </a>
-            </a>
-            <div class="video-time">4:50</div>
+            <div class="video-time">5:42</div>
           </div>
       
           <div class="video-info-grid">
             <div class="channel-picture">
-              <a href="https://www.youtube.com/@epitaph" target="_blank">
-                <img class="profile-picture" src="channel-pictures/parkwaydrive-profile.jpg">
+              <a href="https://www.youtube.com/@blacksabbath" target="_blank">
+                <img class="profile-picture" src="channel-pictures/blackSabbath.jpg">
               </a>
+              <div class="tooltip-video">
+                <img class="tooltip-video-profile-pic" src="channel-pictures/blackSabbath.jpg">
+                <div class="tooltip-video-right-side">
+                  <div class="tooltip-video-name">Black Sabbath</div>
+                  <div class="tooltip-video-subscribers">1.68M Subscribers</div>
+                </div>
+              </div>
             </div>
-            <div class="video-info">
-              <a href="https://www.youtube.com/watch?v=YuG4-lewUTs" target="_blank">
-                <p class="video-title">Parkway Drive - Wild eyes</p>
+            <div class="video-info" >
+              <a href="https://www.youtube.com/watch?v=Zxjz6VhUOr8" target="_blank">
+                <p class="video-title">BLACK SABBATH - "N.I.B." from The End</p>
               </a>
-              <a href="https://www.youtube.com/@epitaph" target="_blank">
-                <p class="video-author">Epitaph Records</p>
+              <a href="https://www.youtube.com/@blacksabbath" target="_blank">
+                <p class="video-author">Black Sabbath</p>
               </a>
-              <p class="video-stats">17M views &middot; 9 years ago</p>
+              <p class="video-stats">13M views &middot; 5 years ago</p>
             </div>
             </div>  
           </div>
 
 
-          <div class="video-preview">
-            <div class="thumbnail-row">
-              <a href="https://www.youtube.com/watch?v=KAJhswlEdTo" target="_blank">
-                <img class="thumbnail" src="thumbnails/lornashore.jpg">
-              </a>
-              <div class="video-time">5:44</div>
-            </div>
-        
-            <div class="video-info-grid">
-              <div class="channel-picture">
-                <a href="https://www.youtube.com/channel/UCyqgKuAOtkK4BM61QADpsRQ" target="_blank">
-                  <img class="profile-picture" src="channel-pictures/lornashore-profile.jpg">
-                </a>
-              </div>
-              <div class="video-info">
-                <a href="https://www.youtube.com/watch?v=KAJhswlEdTo" target="_blank">
-                  <p class="video-title">Of the Abyss</p>
-                </a>
-                <a href="https://www.youtube.com/channel/UCyqgKuAOtkK4BM61QADpsRQ" target="_blank">
-                  <p class="video-author">Lorna Shore</p>
-                </a>
-                <p class="video-stats">3.7Mviews &middot; 1 year ago</p>
-              </div>
-              </div>  
-            </div>
-
       
           <div class="video-preview">
             <div class="thumbnail-row">
-              <img class="thumbnail" src="thumbnails/lambofgod2.jpg">
-              <div class="video-time">4:49</div>
+              <a href="https://www.youtube.com/watch?v=EWUg0kJcrBA" target="_blank">
+                <img class="thumbnail" src="thumbnails/lambofgod2.jpg">
+              </a>
+              <div class="video-time">4:44</div>
             </div>
         
             <div class="video-info-grid">
               <div class="channel-picture">
-                <img class="profile-picture" src="channel-pictures/lambofgod-profile.jpg">
+                <a href="https://www.youtube.com/channel/UC4_yA-FDGB3Zwmk96E7yujA" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/lambofgod-profile.jpg">
+                </a>
+                <div class="tooltip-video">
+                  <img class="tooltip-video-profile-pic" src="channel-pictures/lambofgod-profile.jpg">
+                  <div class="tooltip-video-right-side">
+                    <div class="tooltip-video-name">Lamb of God</div>
+                    <div class="tooltip-video-subscribers">788K Subscribers</div>
+                  </div>
+                </div>
               </div>
-              <div class="video-info">
-                <p class="video-title">512</p>
-                <p class="video-author">Lamb of God</p>
-                <p class="video-stats">20M views &middot; 7 years ago</p>
+              <div class="video-info" >
+                <a href="https://www.youtube.com/watch?v=EWUg0kJcrBA" target="_blank">
+                  <p class="video-title">512</p>
+                </a>
+                <a href="https://www.youtube.com/channel/UC4_yA-FDGB3Zwmk96E7yujA" target="_blank">
+                  <p class="video-author">Lamb of God</p>
+                </a>
+                <p class="video-stats">90K views &middot; 3 years ago</p>
               </div>
               </div>  
             </div>
   
-
-  
-              
+            
           </section>
         </main>
+
+        <script>
+          let popup = document.getElementById("popup");
+
+          function openPopup() {
+            popup.classList.add("openPopup");
+          }
+
+          function closePopup() {
+            popup.classList.remove("openPopup");
+          }
+
+        </script>
   </body>
 </html>

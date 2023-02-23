@@ -1,26 +1,7 @@
-// const openModalButtons = document.querySelectorAll('[data-modal-target]')
-// const closeModalButtons = document.querySelectorAll('[data-modal-target]')
 
-// openModalButtons.forEach(div => {
-//     div.addEventListener('click', () => {
-//         const modal = document.querySelector(div.dataset.modalTarget)
-//         openModal(modal)
-//     })
-// })
+let notificationIcon = document.querySelector(".notifications-icon-containter");
+let popup = document.querySelector(".notification-bar")
 
-// closeModalButtons.forEach(div => {
-//     div.addEventListener('click', () => {
-//         const modal = div.closest('.modal')
-//         closeModal(modal)
-//     })
-// })
-
-// function openModal(modal) {
-//     if(modal == null) return 
-//     modal.classList.add('active')
-// }
-
-// function closeModal(modal) {
-//     if(modal == null) return 
-//     modal.classList.remove('active')
-// }
+notificationIcon.addEventListener("click", function () {
+  popup.classList.toggle("openPopup")
+});

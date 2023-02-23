@@ -1,108 +1,108 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>Youtube.com Clone</title>
-    <link rel="stylesheet" href="styles/video.css">
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="popup.js"></script>
-  </head>
 
-  
+<head>
+  <title>Youtube.com Clone</title>
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="popup.js"></script>
+</head>
 
-  <body>
 
-    <header class="header">
-      <div class="left-section">
-        <img class="hamburger-menu" src="header/hamburger-menu.svg">
-        <img class="youtube-logo" src="header/youtube-logo.svg">
+
+<body>
+
+  <header class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="header/hamburger-menu.svg">
+      <img class="youtube-logo" src="header/youtube-logo.svg">
+    </div>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="sidebar/home.svg">
+        <div>Home</div>
       </div>
-
-      <nav class="sidebar">
-        <div class="sidebar-link">
-          <img src="sidebar/home.svg">
-          <div>Home</div>
-        </div>
-        <div class="sidebar-link">
-          <img src="sidebar/explore.svg">
-          <div>Explore</div>
-        </div>
-        <div class="sidebar-link">
-          <img src="sidebar/subscriptions.svg">
-          <div>Subscriptions</div>
-        </div>
-        <div class="sidebar-link">
-          <img src="sidebar/originals.svg">
-          <div>Originals</div>
-        </div>
-        <div class="sidebar-link">
-          <img src="sidebar/youtube-music.svg">
-          <div>Youtube Music</div>
-        </div>
-        <div class="sidebar-link">
-          <img src="sidebar/library.svg">
-          <div>Library</div>
-        </div>
-      </nav>
-
-      <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search">
-        <button class="search-button">
-          <img class="search-icon" src="header/search.svg">
-          <div class="tooltip">Search</div>
-        </button>
-        <button class="voice-search-button">
-          <img class="voice-search-icon" src="header/voice-search-icon.svg">
-          <div class="tooltip">Search with your voice</div>
-        </button>
+      <div class="sidebar-link">
+        <img src="sidebar/explore.svg">
+        <div>Explore</div>
       </div>
+      <div class="sidebar-link">
+        <img src="sidebar/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar/youtube-music.svg">
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
 
-      <div class="right-section">
-        <div class="upload-icon-container">
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="header/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="header/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+
+    <div class="right-section">
+      <div class="upload-icon-container">
         <img class="upload-icon" src="header/upload.svg">
         <div class="tooltip">Create</div>
-        </div>
-        <div class="youtube-apps-icon-container">
-          <img class="youtube-apps-icon" src="header/youtube-apps.svg">
-          <div class="tooltip">YouTube Apps</div>
-        </div>
+      </div>
+      <div class="youtube-apps-icon-container">
+        <img class="youtube-apps-icon" src="header/youtube-apps.svg">
+        <div class="tooltip">YouTube Apps</div>
+      </div>
 
 
-        <!--aici e durerea-->
-          <div data-modal-target="#modal" class="notifications-icon-containter">
-            <div class="modal active" id="modal"></div>
-            <img class="notifications-icon" src="header/notifications.svg" onclick="openPopup()" onclick="closePopup()">
-            <div class="notifications-count">3</div>
-            <div class="tooltip">Notifications</div>
 
-          <div class="notification-bar" id="popup">
+      <div data-modal-target="#modal" class="notifications-icon-containter">
+        <div class="modal active" id="modal"></div>
+        <img class="notifications-icon" src="header/notifications.svg">
+        <div class="notifications-count">3</div>
+        <div class="tooltip">Notifications</div>
 
-            <div class="notification">
-              <img class="notification-profile-pic" src="channel-pictures/lambofgod-profile.jpg">
-              <p>Lamb of god has posted a new video</p>
-              <img class="notification-thumbnail" src="thumbnails/lambofgod.jpg">
-            </div>
+        <div class="notification-bar" id="popup">
 
-            </div>
-          </div>  
-          <!--aici e durerea-->
+          <div class="notification">
+            <img class="notification-profile-pic" src="channel-pictures/lambofgod-profile.jpg">
+            <p>Lamb of god has posted a new video</p>
+            <img class="notification-thumbnail" src="thumbnails/lambofgod.jpg">
+          </div>
 
-        <div class="profile-pic-container">
-          <a href="https://www.linkedin.com/in/daria-bunghez-6b8139249/?originalSubdomain=ro" target="_blank">
-            <img class="current-user-picture-icon" src="header/profile.jpg">
-          </a>
-          <div class="tooltip">My LinkedIn <br> Profile</div>
         </div>
       </div>
 
-    </header>
+      <div class="profile-pic-container">
+        <a href="https://www.linkedin.com/in/daria-bunghez-6b8139249/?originalSubdomain=ro" target="_blank">
+          <img class="current-user-picture-icon" src="header/profile.jpg">
+        </a>
+        <div class="tooltip">My LinkedIn <br> Profile</div>
+      </div>
+    </div>
+
+  </header>
 
 
   <main>
@@ -115,7 +115,7 @@
           </a>
           <div class="video-time">13:26:00</div>
         </div>
-    
+
         <div class="video-info-grid">
           <div class="channel-picture">
             <a href="https://www.youtube.com/@freecodecamp" target="_blank">
@@ -129,7 +129,7 @@
               </div>
             </div>
           </div>
-          <div class="video-info" >
+          <div class="video-info">
             <a href="https://www.youtube.com/watch?v=SOTamWNgDKc" target="_blank">
               <p class="video-title">AWS Certified Cloud Practitioner Certification Course</p>
             </a>
@@ -138,51 +138,51 @@
             </a>
             <p class="video-stats">1.9M views &middot; 1 year ago</p>
           </div>
-          </div>  
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=WXsD0ZgxjRw&t=11s" target="_blank">
+            <img class="thumbnail" src="thumbnails/api.jpg">
+          </a>
+          <div class="video-time">3:07:07</div>
         </div>
 
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <a href="https://www.youtube.com/watch?v=WXsD0ZgxjRw&t=11s" target="_blank">
-            <img class="thumbnail" src="thumbnails/api.jpg">
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@freecodecamp" target="_blank">
+              <img class="profile-picture" src="channel-pictures/freecodecamp.jpg">
             </a>
-            <div class="video-time">3:07:07</div>
-          </div>
-      
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <a href="https://www.youtube.com/@freecodecamp" target="_blank">
-                <img class="profile-picture" src="channel-pictures/freecodecamp.jpg">
-              </a>
-              <div class="tooltip-video">
-                <img class="tooltip-video-profile-pic" src="channel-pictures/freecodecamp.jpg">
-                <div class="tooltip-video-right-side">
-                  <div class="tooltip-video-name">Freecodecamp</div>
-                  <div class="tooltip-video-subscribers">7.27M Subscribers</div>
-                </div>
+            <div class="tooltip-video">
+              <img class="tooltip-video-profile-pic" src="channel-pictures/freecodecamp.jpg">
+              <div class="tooltip-video-right-side">
+                <div class="tooltip-video-name">Freecodecamp</div>
+                <div class="tooltip-video-subscribers">7.27M Subscribers</div>
               </div>
             </div>
-            <div class="video-info">
-              <a href="https://www.youtube.com/watch?v=WXsD0ZgxjRw&t=11s" target="_blank">
-                <p class="video-title">APIs for Beginners 2023 - How to use an API </p>
-              </a>
-              <a href="https://www.youtube.com/@freecodecamp" target="_blank">
-                <p class="video-author">freecodecamp.org</p>
-              </a>
-              <p class="video-stats">137K views &middot; 1 year ago</p>
-            </div>
-            </div>  
           </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=WXsD0ZgxjRw&t=11s" target="_blank">
+              <p class="video-title">APIs for Beginners 2023 - How to use an API </p>
+            </a>
+            <a href="https://www.youtube.com/@freecodecamp" target="_blank">
+              <p class="video-author">freecodecamp.org</p>
+            </a>
+            <p class="video-stats">137K views &middot; 1 year ago</p>
+          </div>
+        </div>
+      </div>
 
 
-          <div class="video-preview">
+      <div class="video-preview">
         <div class="thumbnail-row">
           <a href="https://www.youtube.com/watch?v=AF6vGYIyV8M" target="_blank">
             <img class="thumbnail" src="thumbnails/popup.jpg">
           </a>
           <div class="video-time">15:39</div>
         </div>
-    
+
         <div class="video-info-grid">
           <div class="channel-picture">
             <a href="https://www.youtube.com/@EasyTutorialsVideo" target="_blank">
@@ -196,7 +196,7 @@
               </div>
             </div>
           </div>
-          <div class="video-info" >
+          <div class="video-info">
             <a href="https://www.youtube.com/watch?v=AF6vGYIyV8M" target="_blank">
               <p class="video-title">How To Make A Popup Using HTML, CSS And JavaScript</p>
             </a>
@@ -205,45 +205,45 @@
             </a>
             <p class="video-stats">253K views &middot; 3 years ago</p>
           </div>
-          </div>  
+        </div>
+      </div>
+
+
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=shMezSrVfig" target="_blank">
+            <img class="thumbnail" src="thumbnails/jlpt.jpg">
+          </a>
+          <div class="video-time">36:07</div>
         </div>
 
-
-
-          <div class="video-preview">
-            <div class="thumbnail-row">
-              <a href="https://www.youtube.com/watch?v=shMezSrVfig" target="_blank">
-              <img class="thumbnail" src="thumbnails/jlpt.jpg">
-              </a>
-              <div class="video-time">36:07</div>
-            </div>
-        
-            <div class="video-info-grid">
-              <div class="channel-picture">
-                <a href="https://www.youtube.com/@japanichiwa" target="_blank">
-                  <img class="profile-picture" src="channel-pictures/jlpt.jpg">
-                </a>
-                <div class="tooltip-video">
-                  <img class="tooltip-video-profile-pic" src="channel-pictures/jlpt.jpg">
-                  <div class="tooltip-video-right-side">
-                    <div class="tooltip-video-name">Japanichiwa</div>
-                    <div class="tooltip-video-subscribers">7.71K Subscribers</div>
-                  </div>
-                </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@japanichiwa" target="_blank">
+              <img class="profile-picture" src="channel-pictures/jlpt.jpg">
+            </a>
+            <div class="tooltip-video">
+              <img class="tooltip-video-profile-pic" src="channel-pictures/jlpt.jpg">
+              <div class="tooltip-video-right-side">
+                <div class="tooltip-video-name">Japanichiwa</div>
+                <div class="tooltip-video-subscribers">7.71K Subscribers</div>
               </div>
-              <div class="video-info">
-                <a href="https://www.youtube.com/watch?v=shMezSrVfig" target="_blank">
-                  <p class="video-title">JLPT N4 LISTENING Sample Exam with Answers</p>
-                </a>
-                <a href="https://www.youtube.com/@japanichiwa" target="_blank">
-                  <p class="video-author">Japanichiwa</p>
-                </a>
-                <p class="video-stats">465K views &middot; 4 years ago</p>
-              </div>
-              </div>  
             </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=shMezSrVfig" target="_blank">
+              <p class="video-title">JLPT N4 LISTENING Sample Exam with Answers</p>
+            </a>
+            <a href="https://www.youtube.com/@japanichiwa" target="_blank">
+              <p class="video-author">Japanichiwa</p>
+            </a>
+            <p class="video-stats">465K views &middot; 4 years ago</p>
+          </div>
+        </div>
+      </div>
 
-          
+
 
 
       <div class="video-preview">
@@ -253,66 +253,66 @@
           </a>
           <div class="video-time">6:55</div>
         </div>
-  
-        <div class="video-info-grid">
-            <div class="channel-picture">
-                <a href="https://www.youtube.com/@gojira" target="_blank">
-                  <img class="profile-picture" src="channel-pictures/gojira-profilepic.jpg">
-                </a>
-                <div class="tooltip-video">
-                  <img class="tooltip-video-profile-pic" src="channel-pictures/gojira-profilepic.jpg">
-                <div>
-                  <div class="tooltip-video-name">Gojira</div>
-                  <div class="tooltip-video-subscribers">570K Subscribers</div>
-                </div>
-              </div>
 
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@gojira" target="_blank">
+              <img class="profile-picture" src="channel-pictures/gojira-profilepic.jpg">
+            </a>
+            <div class="tooltip-video">
+              <img class="tooltip-video-profile-pic" src="channel-pictures/gojira-profilepic.jpg">
+              <div>
+                <div class="tooltip-video-name">Gojira</div>
+                <div class="tooltip-video-subscribers">570K Subscribers</div>
+              </div>
             </div>
-            <div class="video-info">
-              <a href="https://www.youtube.com/watch?v=-8nBLopOSg8" target="_blank">
-                <p class="video-title">Where dragons dwell</p>
-              </a>
-              <a href="https://www.youtube.com/@gojira" target="_blank">
-                <p class="video-author">Gojira</p>
-              </a>
-              <p class="video-stats">524K views &middot; 2 years ago</p>
-            </div>
+
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=-8nBLopOSg8" target="_blank">
+              <p class="video-title">Where dragons dwell</p>
+            </a>
+            <a href="https://www.youtube.com/@gojira" target="_blank">
+              <p class="video-author">Gojira</p>
+            </a>
+            <p class="video-stats">524K views &middot; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=F3WIHtOmkBg" target="_blank">
+            <img class="thumbnail" src="thumbnails/metallica.jpg">
+          </a>
+          <div class="video-time">4:34</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UCbulh9WdLtEXiooRcYK7SWw" target="_blank">
+              <img class="profile-picture" src="channel-pictures/metallica.jpg">
+            </a>
+            <div class="tooltip-video">
+              <img class="tooltip-video-profile-pic" src="channel-pictures/metallica.jpg">
+              <div class="tooltip-video-right-side">
+                <div class="tooltip-video-name">Metallica</div>
+                <div class="tooltip-video-subscribers">9.44M Subscribers</div>
+              </div>
             </div>
           </div>
-          
-    
-          <div class="video-preview">
-            <div class="thumbnail-row">
-              <a href="https://www.youtube.com/watch?v=F3WIHtOmkBg" target="_blank">
-                <img class="thumbnail" src="thumbnails/metallica.jpg">
-              </a>
-              <div class="video-time">4:34</div>
-            </div>
-        
-            <div class="video-info-grid">
-              <div class="channel-picture">
-                <a href="https://www.youtube.com/channel/UCbulh9WdLtEXiooRcYK7SWw" target="_blank">
-                  <img class="profile-picture" src="channel-pictures/metallica.jpg">
-                </a>
-                <div class="tooltip-video">
-                  <img class="tooltip-video-profile-pic" src="channel-pictures/metallica.jpg">
-                  <div class="tooltip-video-right-side">
-                    <div class="tooltip-video-name">Metallica</div>
-                    <div class="tooltip-video-subscribers">9.44M Subscribers</div>
-                  </div>
-                </div>
-              </div>
-              <div class="video-info" >
-                <a href="https://www.youtube.com/watch?v=F3WIHtOmkBg" target="_blank">
-                  <p class="video-title">Metallica - Until it sleeps</p>
-                </a>
-                <a href="https://www.youtube.com/channel/UCbulh9WdLtEXiooRcYK7SWw" target="_blank">
-                  <p class="video-author">Metallica</p>
-                </a>
-                <p class="video-stats">43M views &middot; 8 years ago</p>
-              </div>
-              </div>  
-            </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=F3WIHtOmkBg" target="_blank">
+              <p class="video-title">Metallica - Until it sleeps</p>
+            </a>
+            <a href="https://www.youtube.com/channel/UCbulh9WdLtEXiooRcYK7SWw" target="_blank">
+              <p class="video-author">Metallica</p>
+            </a>
+            <p class="video-stats">43M views &middot; 8 years ago</p>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -320,13 +320,13 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <a href="https://www.youtube.com/watch?v=wmkXQeqEbL8" target="_blank">
-          <a href="https://www.youtube.com/watch?v=wmkXQeqEbL8" target="_blank">
-            <img class="thumbnail" src="thumbnails/soad.jpg">
-          </a>
+            <a href="https://www.youtube.com/watch?v=wmkXQeqEbL8" target="_blank">
+              <img class="thumbnail" src="thumbnails/soad.jpg">
+            </a>
           </a>
           <div class="video-time">2:41</div>
         </div>
-    
+
         <div class="video-info-grid">
           <div class="channel-picture">
             <a href="https://www.youtube.com/channel/UCDJftX2zx_UT_QSnBGIF96w" target="_blank">
@@ -349,92 +349,81 @@
             </a>
             <p class="video-stats">477K views &middot; 5 years ago</p>
           </div>
-          </div>  
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=Zxjz6VhUOr8" target="_blank">
+            <img class="thumbnail" src="thumbnails/blackSabbath.jpg">
+          </a>
+          <div class="video-time">5:42</div>
         </div>
 
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <a href="https://www.youtube.com/watch?v=Zxjz6VhUOr8" target="_blank">
-              <img class="thumbnail" src="thumbnails/blackSabbath.jpg">
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@blacksabbath" target="_blank">
+              <img class="profile-picture" src="channel-pictures/blackSabbath.jpg">
             </a>
-            <div class="video-time">5:42</div>
+            <div class="tooltip-video">
+              <img class="tooltip-video-profile-pic" src="channel-pictures/blackSabbath.jpg">
+              <div class="tooltip-video-right-side">
+                <div class="tooltip-video-name">Black Sabbath</div>
+                <div class="tooltip-video-subscribers">1.68M Subscribers</div>
+              </div>
+            </div>
           </div>
-      
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <a href="https://www.youtube.com/@blacksabbath" target="_blank">
-                <img class="profile-picture" src="channel-pictures/blackSabbath.jpg">
-              </a>
-              <div class="tooltip-video">
-                <img class="tooltip-video-profile-pic" src="channel-pictures/blackSabbath.jpg">
-                <div class="tooltip-video-right-side">
-                  <div class="tooltip-video-name">Black Sabbath</div>
-                  <div class="tooltip-video-subscribers">1.68M Subscribers</div>
-                </div>
-              </div>
-            </div>
-            <div class="video-info" >
-              <a href="https://www.youtube.com/watch?v=Zxjz6VhUOr8" target="_blank">
-                <p class="video-title">BLACK SABBATH - "N.I.B." from The End</p>
-              </a>
-              <a href="https://www.youtube.com/@blacksabbath" target="_blank">
-                <p class="video-author">Black Sabbath</p>
-              </a>
-              <p class="video-stats">13M views &middot; 5 years ago</p>
-            </div>
-            </div>  
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=Zxjz6VhUOr8" target="_blank">
+              <p class="video-title">BLACK SABBATH - "N.I.B." from The End</p>
+            </a>
+            <a href="https://www.youtube.com/@blacksabbath" target="_blank">
+              <p class="video-author">Black Sabbath</p>
+            </a>
+            <p class="video-stats">13M views &middot; 5 years ago</p>
           </div>
+        </div>
+      </div>
 
 
-      
-          <div class="video-preview">
-            <div class="thumbnail-row">
-              <a href="https://www.youtube.com/watch?v=EWUg0kJcrBA" target="_blank">
-                <img class="thumbnail" src="thumbnails/lambofgod2.jpg">
-              </a>
-              <div class="video-time">4:44</div>
-            </div>
-        
-            <div class="video-info-grid">
-              <div class="channel-picture">
-                <a href="https://www.youtube.com/channel/UC4_yA-FDGB3Zwmk96E7yujA" target="_blank">
-                  <img class="profile-picture" src="channel-pictures/lambofgod-profile.jpg">
-                </a>
-                <div class="tooltip-video">
-                  <img class="tooltip-video-profile-pic" src="channel-pictures/lambofgod-profile.jpg">
-                  <div class="tooltip-video-right-side">
-                    <div class="tooltip-video-name">Lamb of God</div>
-                    <div class="tooltip-video-subscribers">788K Subscribers</div>
-                  </div>
-                </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=EWUg0kJcrBA" target="_blank">
+            <img class="thumbnail" src="thumbnails/lambofgod2.jpg">
+          </a>
+          <div class="video-time">4:44</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UC4_yA-FDGB3Zwmk96E7yujA" target="_blank">
+              <img class="profile-picture" src="channel-pictures/lambofgod-profile.jpg">
+            </a>
+            <div class="tooltip-video">
+              <img class="tooltip-video-profile-pic" src="channel-pictures/lambofgod-profile.jpg">
+              <div class="tooltip-video-right-side">
+                <div class="tooltip-video-name">Lamb of God</div>
+                <div class="tooltip-video-subscribers">788K Subscribers</div>
               </div>
-              <div class="video-info" >
-                <a href="https://www.youtube.com/watch?v=EWUg0kJcrBA" target="_blank">
-                  <p class="video-title">512</p>
-                </a>
-                <a href="https://www.youtube.com/channel/UC4_yA-FDGB3Zwmk96E7yujA" target="_blank">
-                  <p class="video-author">Lamb of God</p>
-                </a>
-                <p class="video-stats">90K views &middot; 3 years ago</p>
-              </div>
-              </div>  
             </div>
-  
-            
-          </section>
-        </main>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=EWUg0kJcrBA" target="_blank">
+              <p class="video-title">512</p>
+            </a>
+            <a href="https://www.youtube.com/channel/UC4_yA-FDGB3Zwmk96E7yujA" target="_blank">
+              <p class="video-author">Lamb of God</p>
+            </a>
+            <p class="video-stats">90K views &middot; 3 years ago</p>
+          </div>
+        </div>
+      </div>
 
-        <script>
-          let popup = document.getElementById("popup");
 
-          function openPopup() {
-            popup.classList.add("openPopup");
-          }
+    </section>
+  </main>
 
-          function closePopup() {
-            popup.classList.remove("openPopup");
-          }
+</body>
 
-        </script>
-  </body>
 </html>

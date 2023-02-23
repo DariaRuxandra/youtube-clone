@@ -164,12 +164,14 @@
     top: 35px;
     margin-right: 40px;
     opacity: 0;
-    visibility: hidden;
+    display: none;
     transition: transform 0.4s, top 0.4s;
 }
 
+
 .openPopup {
-    visibility: visible;
+    display: block;
+    opacity: 1;
 }
 
 .notification {

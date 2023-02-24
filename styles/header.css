@@ -160,34 +160,53 @@
 .notification-bar {
     position: absolute;
     justify-content: space-evenly;
-    background-color: gray;
-    top: 35px;
-    margin-right: 40px;
-    opacity: 0;
-    display: none;
-    transition: transform 0.4s, top 0.4s;
+    width: 350px;
+    margin-right: 200px;
+    background-color: rgb(252, 249, 249);
+    top: 30px;
+    /* opacity: 0; */
+    visibility: hidden;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
 
 
 .openPopup {
     display: block;
-    opacity: 1;
+    /* opacity: 1; */
+    visibility: visible;
 }
 
 .notification {
     display: flex;
+    align-items: center;
+    padding: 23px 25px;
+    border-bottom: 1px solid gray;
+}
 
-    padding: 25px 40px;
+.notification:hover {
+    background-color: rgb(226, 220, 220);
+}
+
+.notification-header {
+    border-bottom: 1px solid gray;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.2rem;
+    padding-left: 7px;
 }
 
 .notification-profile-pic {
-    width: 25px;
-    height: 25px;
-    border-radius: 13px;
-    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
 }
 
-
+.notification-text {
+    padding-left: 10px;
+     flex: 1;
+     width: 0;
+}
 
 .notification-thumbnail {
     width: 60px;
@@ -197,10 +216,6 @@
 
 .notifications-icon-containter:active .notification-bar {
     opacity: 1;
-}
-
-.notification {
-    border-bottom: 1px solid black;
 }
 
 .notifications-count {
